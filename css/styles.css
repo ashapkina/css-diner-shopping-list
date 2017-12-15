@@ -1,0 +1,79 @@
+html {
+	border: 10px solid #9f99ab;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+body {
+	background: #3b3f45;
+	color: #f1f4f5;
+	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+	text-align: center;
+}
+
+header {
+	background: #4a4f56;
+	color: #d76a64;
+	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+	font-size: 24px;
+	padding: 5px 0px;
+	margin: 10px 0px;
+}
+p {
+	font-size: 24px;
+}
+.list {
+	padding: 10px 200px;
+	margin: 10px 0px;
+}
+.list li {
+	list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    border-top: 3px solid #7a7593;
+    border-bottom: 3px solid #7a7593;
+    background: #88839e;
+    transition: all .1s ease-in;
+}
+.list li:nth-child(2n) {
+	background: #7a7593;
+}
+.list li:hover,
+.list li:focus {
+	color: #9f99ab;
+    background: #625e77;
+    border-top: 3px solid #f1f4f5;
+    border-bottom: 3px solid #f1f4f5;
+    /* text-decoration: line-through; */
+}
+.list li:active {
+	background: #d76a64;
+}
+.checkbox {
+	width: 15px;
+	height: 15px;
+
+}
+span::before {
+	content: "(";
+}
+span::after {
+	content: ")";
+}
+
+span {
+	font-size: 14px;
+}
+input[type="checkbox"]:checked + label {
+	 color: #9f99ab;
+	 text-decoration: line-through;
+}	
+
+footer {
+	background: #4a4f56;
+	color: #d76a64;
+	padding: 10px 200px;
+	margin: auto;
+	width: 40%;
+}
